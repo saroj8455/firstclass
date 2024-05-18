@@ -117,3 +117,11 @@ footer {
 .p-card .p-card-footer {
   padding: 1rem 0 0 0 !important;
 }
+
+/* breadcrumb */
+.p-breadcrumb {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  padding: 1rem;
+}

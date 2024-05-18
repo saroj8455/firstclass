@@ -1,5 +1,5 @@
 <!-- menubar -->
-<div class="card">
+<div class="card sticky top-0 z-1">
   <p-menubar [model]="items">
     <ng-template pTemplate="start">
       <img
@@ -19,7 +19,7 @@
       </div>
     </ng-template>
   </p-menubar>
-  <div class="card flex justify-content-betweenpx px-1 py-2">
+  <div class="card w-full">
     <p-breadcrumb class="max-w-full" [model]="items" [home]="home" />
   </div>
 </div>
