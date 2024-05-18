@@ -36,7 +36,7 @@
                   <img alt="Card" [src]="product.thumbnail" />
                 </div>
               </ng-template>
-              <div [ngClass]="isReadMore ? 'limitTextHeight' : ''">
+              <div [ngClass]="isReadMore ? 'limitTextHeight' : ''" class="pt-0">
                 {{ product.description }}
               </div>
               <!-- <div class="card mt-2 flex justify-content-center">
@@ -48,13 +48,14 @@
                 ></p-button>
               </div> -->
               <ng-template pTemplate="footer">
-                <p-button label="Save" icon="pi pi-check"></p-button>
-                <p-button
-                  label="Cancel"
-                  icon="pi pi-times"
-                  styleClass="p-button-secondary"
-                  [style]="{ 'margin-left': '.5em' }"
-                ></p-button>
+                <div class="flex justify-content-around align-items-center">
+                  <p-button label="Buy" icon="pi pi-check"></p-button>
+                  <p-button
+                    label="Add to cart"
+                    icon="pi pi-heart"
+                    styleClass="p-button-danger"
+                  ></p-button>
+                </div>
               </ng-template>
             </p-card>
           </ng-template>
