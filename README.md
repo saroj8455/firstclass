@@ -29,3 +29,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Soluation for install different angular setup
 
 `https://stackoverflow.com/questions/37227794/ng-command-not-found-while-creating-new-project-using-angular-cli`
+
+## Task List
+
+- [ ] create a sticky top navbar with breadcumb
+- [ ] create a filter box based brand,price,category etc
+- [ ] render the dummy products with responsive manner
