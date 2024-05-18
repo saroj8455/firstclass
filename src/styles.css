@@ -125,3 +125,10 @@ footer {
   border-radius: 0;
   padding: 1rem;
 }
+.p-menubar {
+  padding: 0.5rem;
+  background: #f9fafb;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+}
