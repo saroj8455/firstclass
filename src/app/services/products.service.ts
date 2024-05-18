@@ -16,7 +16,6 @@ export class ProductsService {
   products() {
     return this._http.get<IProductResponse>(FakeStoreApi).pipe(
       map((resp) => {
-        console.log(resp.products);
         return resp.products as Product[];
       })
     );
