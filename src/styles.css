@@ -104,6 +104,9 @@ p {
   font-size: var(--fs-400);
 }
 
+.p-card-title {
+  font-size: var(--fs-200);
+}
 footer {
   /* position: absolute; */
   /* bottom: 0; */

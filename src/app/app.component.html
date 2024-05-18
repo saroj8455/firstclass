@@ -5,6 +5,66 @@
     </div>
     <app-griddemo></app-griddemo>
   </div>
+  <!-- render products from api -->
+  <section id="product__container">
+    <div class="container py-4">
+      <div class="card flex justify-content-center">
+        <p-toast
+          [showTransformOptions]="'translateY(100%)'"
+          [showTransitionOptions]="'1000ms'"
+          [hideTransitionOptions]="'1000ms'"
+          [showTransformOptions]="'translateX(100%)'"
+          [breakpoints]="{ '920px': { width: '100%', right: '0', left: '0' } }"
+        />
+      </div>
+
+      <h3 class="text-4xl py-2 text-center text-orange-400">
+        List of products
+      </h3>
+
+      <ng-template [ngIf]="products">
+        <div class="product__cards">
+          <ng-template
+            class="card"
+            ngFor
+            let-product
+            [ngForOf]="products"
+            let-items="ngForOf"
+            let-i="index"
+          >
+            <p-card [header]="product.title" [subheader]="product.category">
+              <ng-template pTemplate="header">
+                <div class="product__img">
+                  <img alt="Card" [src]="product.thumbnail" />
+                </div>
+              </ng-template>
+              <div [ngClass]="isReadMore ? 'limitTextHeight' : ''">
+                {{ product.description }}
+              </div>
+              <!-- <div class="card mt-2 flex justify-content-center">
+                <p-button
+                  [label]="isReadMore ? 'Read More' : 'Read Less'"
+                  (click)="showText()"
+                  text="true"
+                  severity="info"
+                ></p-button>
+              </div> -->
+              <ng-template pTemplate="footer">
+                <p-button label="Save" icon="pi pi-check"></p-button>
+                <p-button
+                  label="Cancel"
+                  icon="pi pi-times"
+                  styleClass="p-button-secondary"
+                  [style]="{ 'margin-left': '.5em' }"
+                ></p-button>
+              </ng-template>
+            </p-card>
+          </ng-template>
+        </div>
+      </ng-template>
+      <div></div>
+    </div>
+  </section>
 </main>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

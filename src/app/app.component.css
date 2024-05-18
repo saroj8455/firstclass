@@ -1,0 +1,26 @@
+/* css for render products  */
+
+.product__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 80%), 1fr));
+  gap: 1rem;
+}
+
+.product__img {
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+}
+
+.product__img > img {
+  max-width: 100%;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+
+  /* better combination with objectfit cover and contain  */
+}
+
+.limitTextHeight {
+  height: 20px;
+  overflow: hidden;
+}
