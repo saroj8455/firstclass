@@ -133,7 +133,7 @@ export class AppComponent implements OnInit {
   }
 
   loadBreadcrumb() {
-    this.items = [
+    this.bredcrumbItems = [
       { label: 'Electronics' },
       { label: 'Computer' },
       { label: 'Accessories' },

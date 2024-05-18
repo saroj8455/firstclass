@@ -20,7 +20,7 @@
     </ng-template>
   </p-menubar>
   <div class="card w-full">
-    <p-breadcrumb class="max-w-full" [model]="items" [home]="home" />
+    <p-breadcrumb class="max-w-full" [model]="bredcrumbItems" [home]="home" />
   </div>
 </div>
 
@@ -76,11 +76,18 @@
                 ></p-button>
               </div> -->
               <ng-template pTemplate="footer">
-                <div class="flex justify-content-around align-items-center">
-                  <p-button label="Buy" icon="pi pi-check"></p-button>
+                <div
+                  class="flex md:flex-column sm:flex-row align-items-center justify-content-center gap-2"
+                >
+                  <p-button
+                    label="Buy now"
+                    icon="pi pi-shopping-cart"
+                    [rounded]="true"
+                  ></p-button>
                   <p-button
                     label="Add to cart"
                     icon="pi pi-heart"
+                    [rounded]="true"
                     styleClass="p-button-danger"
                   ></p-button>
                 </div>

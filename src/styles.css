@@ -132,3 +132,28 @@ footer {
   border: 1px solid #e5e7eb;
   border-radius: 0;
 }
+
+/* fix buy and add to cart same size with responsive manner */
+
+p-button {
+  /* font-size: 30px; */
+  /* display: inline-block; */
+  /* display: none; */
+  width: 100%;
+}
+.p-button {
+  width: 100% !important;
+  margin: 0;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  align-items: center;
+  vertical-align: bottom;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.p-button-label {
+  font-weight: 500;
+}
