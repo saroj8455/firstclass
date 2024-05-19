@@ -144,7 +144,7 @@ p-button {
 .p-button {
   width: 100% !important;
   margin: 0;
-  display: inline-flex;
+  display: inline-block;
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
