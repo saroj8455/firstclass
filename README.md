@@ -35,3 +35,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [ ] create a sticky top navbar with breadcumb
 - [ ] create a filter box based brand,price,category etc
 - [ ] render the dummy products with responsive manner
+- [ ] create a filter for category and price
