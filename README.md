@@ -36,4 +36,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [ ] create a filter box based brand,price,category etc
 - [ ] render the dummy products with responsive manner
 - [ ] create a filter for category and price
-- [ ] configure to disable server side rendering
+- [x] configure to disable server side rendering
+- [x] reference link `https://www.reddit.com/r/Angular2/comments/1apc511/how_can_i_turn_off_ssr_in_angular_17/?rdt=34394`
