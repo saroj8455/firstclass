@@ -1,0 +1,17 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>
+
+<div class="card py-5">
+  <div class="text-900 text-center text-3xl mb-2">
+    Angular JSON Editor Implementation
+  </div>
+
+  <form [formGroup]="form" (submit)="submit()">
+    <json-editor [options]="editorOptions" formControlName="myinput">
+    </json-editor>
+  </form>
+</div>
+
+<div style="height: 600px">
+  <json-editor [options]="editorOptions" [data]="data" #editor></json-editor>
+  <!-- <app-show [data]="showData"></app-show> -->
+</div>

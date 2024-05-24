@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
-
+@import "jsoneditor/dist/jsoneditor.min.css";
 :root {
   /* either --dark-mode or --no-dark-mode */
   --color-scheme: var(--dark-mode);
@@ -29,6 +29,11 @@
   /* settings */
   --no-dark-mode: light;
   --dark-mode: dark light;
+}
+
+.ace_text-input {
+  position: relative !important;
+  min-height: 50dvh;
 }
 
 *,
