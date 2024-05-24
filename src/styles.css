@@ -31,11 +31,18 @@
   --dark-mode: dark light;
 }
 
+/* for json editor */
+
 .ace_text-input {
   position: relative !important;
   min-height: 50dvh;
 }
 
+.jsoneditor-poweredBy {
+  display: none !important;
+}
+
+/* for json editor  */
 *,
 *::before,
 *::after {
