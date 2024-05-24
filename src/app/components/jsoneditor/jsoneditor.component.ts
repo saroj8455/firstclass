@@ -11,11 +11,19 @@ import {
   NgJsonEditorModule,
 } from 'ang-jsoneditor';
 import { schema } from './schema.value';
+import { NgIf } from '@angular/common';
+import { PrimeConfigModule } from '../../config/primeconfig.module';
 
 @Component({
   selector: 'app-jsoneditor',
   standalone: true,
-  imports: [NgJsonEditorModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    NgJsonEditorModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgIf,
+    PrimeConfigModule,
+  ],
   templateUrl: './jsoneditor.component.html',
   styleUrl: './jsoneditor.component.css',
 })

@@ -8,6 +8,11 @@
   <form [formGroup]="form" (submit)="submit()">
     <json-editor [options]="editorOptions" formControlName="myinput">
     </json-editor>
+    <div *ngIf="formData">
+      <h4>Form submitted</h4>
+      {{ formData }}
+    </div>
+    <p-button label="Help" type="submit" severity="help" />
   </form>
 </div>
 
